@@ -17,5 +17,6 @@ let x; // by default any
 x = 8;
 x = 'abc'
 console.log(x); 
+console.log(x.length); // this won't give error coz of any
 
 // we should not use any in code coz using any for a variable type in TypeScript is similar to write JavaScript.
