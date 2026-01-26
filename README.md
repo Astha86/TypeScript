@@ -144,3 +144,25 @@ interface User {
 
 - **Type Aliases**: Creates a custom name for a type
 eg: `type ID = string | number;`
+
+## Array Methods and Operations
+
+TypeScript arrays come with a range of built-in methods for common operations, such as adding, removing, and manipulating elements. Some of these methods include:
+
+- **push()**: Adds one or more elements to the end of the array.
+
+- **pop()**: Removes and returns the last element.
+
+- **shift()**: Removes and returns the first element.
+
+- **unshift**: Adds one or more elements to the beginning of the array.
+
+- **splice()**: Can add, remove, or replace elements at specific positions in the array.
+
+- **map()**: Applies a function to each element and returns a new array.
+
+- **filter()**: Creates a new array with elements that pass a specific test.
+
+- **reduce()**: Reduces the array to a single value through a provided function.
+
+- **sort()**: Sorts the elements of the array.
