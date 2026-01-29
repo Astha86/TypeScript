@@ -75,3 +75,45 @@ let adminEmployee: AdminEmployee = {
 console.log(adminEmployee.name);   // Output: John Doe
 console.log(adminEmployee.isAdmin); // Output: true
 console.log(adminEmployee.empID);   // Output: 12345
+
+// ==Use Cases of Interface== 
+
+// Readonly Properties
+interface Point {
+    readonly x: number;
+    readonly y: number;
+}
+
+// Function Signatures
+interface Calculator {
+    add(x: number, y: number): number;
+    subtract(x: number, y: number): number;
+}
+
+// Implementing Interface in Classes
+class Calculator implements Calculator {
+    add(x: number, y: number): number {
+        return x + y;
+    }
+
+    subtract(x: number, y: number): number {
+        return x - y;
+    }           
+}
+
+// Index Signatures
+interface StringArray {
+    [index: number]: string;
+}
+let myArray: StringArray;
+myArray = ["Hello", "World"];
+console.log(myArray[0]); // Output: Hello
+
+interface Ratings {
+    [movie: string]: number;
+}
+let bookRatings: Ratings = {
+    "1984": 5,
+    "Brave New World": 4
+};
+console.log(bookRatings["1984"]); // Output: 5
